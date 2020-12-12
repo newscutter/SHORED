@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="512px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>black/circle</title>
+    <desc>Created with Sketch.</desc>
+    <g id="black/circle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="background" fill="#222222">
+            <circle id="Oval" cx="256" cy="256" r="256"></circle>
+        </g>
+        <path d="M291.5,218.545393 L291.5,218.585648 L186.5,279.129674 L186.5,343.5 L221.5,343.5 L221.5,314.054292 L221.5,293.986781 L221.5,293.954344 L221.527874,293.97068 L326.5,233.337923 L326.5,168.5 L291.5,168.5 L291.5,218.545393 Z M274.054149,208.472699 L274,208.441435 L274,151 L344,151 L344,243.419595 L238.787293,304.08627 L239,304.210936 L239,361 L169,361 L169,269.152834 L274.054149,208.472699 Z M169,248.8585 L169,151 L239,151 L239,208.441435 L221.5,218.545393 L221.5,168.5 L186.5,168.5 L186.5,238.755249 L169,248.8585 Z M274,304.210936 L291.5,293.954344 L291.5,343.5 L326.5,343.5 L326.5,273.5 L344,263.357825 L344,361 L274,361 L274,304.210936 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+    </g>
+</svg>

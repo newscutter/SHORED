@@ -1,0 +1,84 @@
+{
+  "name": "haven",
+  "productName": "Haven",
+  "version": "1.1.2",
+  "description": "Desktop App for Haven Vault",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npm run build && electron-forge start",
+    "test": "jest --detectOpenHandles",
+    "package": "npm run build && electron-forge package",
+    "make": "npm run build && electron-forge make",
+    "publish": "npm run build && electron-forge publish",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "fixlint": "tslint --fix -c tslint.json -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Haven Team",
+    "email": "info@havenprotocol.org"
+  },
+  "license": "MIT",
+  "config": {
+    "forge": "./forge.config.js"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "haven-wallet-core": "^1.0.19",
+    "rxjs": "^6.6.0",
+    "wallet-core": "file:../"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.52",
+    "@electron-forge/maker-deb": "^6.0.0-beta.52",
+    "@electron-forge/maker-dmg": "6.0.0-beta.52",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.52",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.52",
+    "@electron-forge/maker-zip": "6.0.0-beta.52",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.0.0-beta.52",
+    "@electron-forge/publisher-github": "^6.0.0-beta.52",
+    "@types/jest": "^26.0.10",
+    "electron": "^9.1.0",
+    "jest": "^26.4.0",
+    "ncp": "^2.0.0",
+    "ts-jest": "^26.2.0",
+    "tslint": "^5.20.1",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0"
+  },
+  "jest": {
+    "verbose": true,
+    "coverageDirectory": "<rootDir>/coverage",
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "testMatch": [
+      "<rootDir>/__tests__/**.ts"
+    ],
+    "globals": {
+      "ts-jest": {
+        "tsConfig": "tsconfig.json",
+        "diagnostics": true
+      }
+    },
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "<rootDir>/src/**/*"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  }
+}
